@@ -1,5 +1,7 @@
 <h1 align="center">【 venomous's dotfiles 】</h1>
 
+## [Join Fluxer Server](https://fluxer.gg/NkvInTZn)
+
 # A Simple Personal setup of MangoWM
 ---
 Only MangoWM config was initially built using AI but I revised it whole cross-checking everything to the MangoWM's wiki. <br>
@@ -18,6 +20,7 @@ UGH it took so much time but I got it done, tho I'll rebuild it from scratch whe
 
 ## Softwares
 Since this is my personal setup, I'm going to list every software/dependency I use. Download only what you need :3<br>Don't forget to replace keybinds for *Optional* software with the ones you use.
+
 | Category | Name | Description | Need |
 |---|---|---|---|
 | **Compositor** | [MangoWM](https://mangowm.github.io/) | - | **Ofcourse you need it, it's the WM** |
