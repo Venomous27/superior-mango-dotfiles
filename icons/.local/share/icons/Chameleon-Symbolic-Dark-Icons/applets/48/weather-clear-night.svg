@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="32"
+   height="32"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="weather-clear-night.svg"
+   inkscape:version="1.4 (unknown)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="16.83798"
+     inkscape:cx="23.815208"
+     inkscape:cy="14.223796"
+     inkscape:window-width="1920"
+     inkscape:window-height="996"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <defs
+     id="defs1">
+    <style
+       id="current-color-scheme"
+       type="text/css">
+   .ColorScheme-Text { color:#dedede; } .ColorScheme-Highlight { color:#5294e2; }
+  </style>
+  </defs>
+  <path
+     d="M 17.015558,6.5 C 12.704623,6.6531864 8.7323848,9.2107429 7.1674145,13.352806 5.1032154,18.808941 7.9834088,24.883691 13.651642,26.869238 17.95476,28.377085 22.607305,27.087008 25.5,24.006783 a 10.107031,9.7287509 0 0 1 -6.584047,-0.09459 C 13.653278,22.067843 10.955666,16.44808 12.871692,11.380965 13.673643,9.2603187 15.171519,7.6144463 17.015558,6.5000481 Z"
+     style="fill:currentColor;stroke-width:1.78372"
+     class="ColorScheme-Text"
+     id="path1" />
+</svg>

@@ -1,0 +1,27 @@
+@theme "~/.config/rofi/theme.rasi"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+  modes: "drun";
+  font: "JetBrainsMono Nerd Font Mono 11";
+  show-icons: true;
+}
+
+element-icon {
+    size: 30px;
+}
+
+window {
+    width: 27%;
+//    width: 21%;
+    border-color: @selected-normal-background;
+    border: 2px;
+    padding: 5px;
+
+}
+
+listview {
+    fixed-height: false;
+    lines: 11;
+//   lines: 7;
+}

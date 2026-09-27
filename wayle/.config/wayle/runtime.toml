@@ -1,0 +1,11 @@
+[modules.bluetooth]
+label-show = false
+
+[modules.dashboard]
+icon-color = "accent"
+
+[modules.mango-workspaces]
+active-indicator = "underline"
+
+[modules.network]
+label-show = false

@@ -1,0 +1,115 @@
+# Wayle configuration file
+[general]
+font-sans = "jetbrains-mono-nerd"
+
+[bar]
+scale = 0.75
+padding = 0.0
+bg = "bg-base"
+border-width = 0
+button-variant = "basic"
+background-opacity = 100
+button-label-size = 1.1
+
+[[bar.layout]]
+monitor = "*"
+show = true
+left = [
+    "dashboard",
+    "mango-workspaces",
+    "idle-inhibit",
+    "window-title",
+    "media",
+]
+center = ["clock"]
+right = [
+    "systray",
+    "custom-nl",
+    "bluetooth",
+    "network",
+    "brightness",
+    "battery",
+    "volume",
+    "ram",
+    "notifications",
+
+]
+
+[styling]
+theme-provider = "pywal"
+pywal-contrast = [4.0]
+theming-monitor = "HDMI-A-1"
+
+[modules.idle-inhibit]
+label-show = false
+icon-color = "accent"
+
+[modules.media]
+label-color = "fg-default"
+
+[[modules.custom]]
+id = "nl" #install wlsunset
+icon-name = "tb-eye-symbolic" #to install this icon, 'wayle icons install tabler eye'
+button-bg-color = "transparent"
+left-click = "wlsunset -T 4500"
+right-click = "killall wlsunset"
+label-color = "fg-default"
+
+[modules.battery]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.bluetooth]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.brightness]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.clock]
+format = "%H:%M - %A, %b %d"
+border-color = "transparent"
+icon-show = false
+icon-bg-color = "transparent"
+button-bg-color = "transparent"
+icon-color = "accent"
+label-color = "fg-default"
+
+[modules.network]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.notifications]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.ram]
+poll-interval-ms = 1000
+format = "{{ used_gib }}GB"
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.volume]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[modules.window-title]
+button-bg-color = "transparent"
+label-color = "fg-default"
+icon-color = "accent"
+
+[osd]
+monitor = "HDMI-A-1"
+#monitor = "eDPI-1"
+icon-color = "accent"
+
+[wallpaper]
+engine-enabled = false

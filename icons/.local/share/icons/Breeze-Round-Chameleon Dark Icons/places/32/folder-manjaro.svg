@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 64 64"
+   version="1.1"
+   id="svg4"
+   sodipodi:docname="folder-manjaro.svg"
+   inkscape:version="1.4.2 (unknown)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="11.890625"
+     inkscape:cx="31.95795"
+     inkscape:cy="32"
+     inkscape:current-layer="svg4" />
+  <defs
+     id="defs3051">
+    <style
+       type="text/css"
+       id="current-color-scheme">
+      .ColorScheme-Text {
+      color:#232629;
+      }
+      .ColorScheme-Accent {
+      color:#3daee9;
+      }
+    </style>
+  </defs>
+  <path
+     style="fill:currentColor"
+     d="m 9,6.000034 c -3,0 -5,2 -4.992,5.197014 L 4,20 c -0.5255187,0 -1,0.363715 -1,1 l 0.008,0.197048 H 3.01 c -5e-5,0.004 -0.002,0.008 -0.002,0.01172 L 3,53 c 0,3 2,5 5,5 v 0 h 48 v 0 c 3,0 5,-2 5,-5 l 0.008,-31.791232 v -0.01172 L 61,17 c 0,-0.484427 -0.416433,-1 -1,-1 v 0 0 l 0.008,-0.802952 C 60,12 58,10 55,10 H 32 C 32,8 30,6 28,6.000034 Z"
+     class="ColorScheme-Accent"
+     id="path1" />
+  <path
+     style="fill-opacity:0.33"
+     d="M 9,6 C 6,6 4,8 4.0000003,11 v 9 H 22 l 4,-4 h 34 v -1 0 0 c 0,-3 -2,-5 -5,-5 L 32,9.9999657 C 32,8 30,6 28,5.9999657 Z"
+     id="path2" />
+  <path
+     style="fill-opacity:0.2"
+     d="m 26,16 -6,3 H 4 v 1 H 22 Z M 5,57 c 0,0.416776 2,1 3,1 h 2 42 3 c 2.476706,0 4,-0.558829 4,-1 H 52 10 Z"
+     class="ColorScheme-Text"
+     id="path4" />
+  <path
+     style="fill:#e5e5e5;fill-opacity:1;stroke-width:1.12501"
+     d="M 22.0718,27 C 21.47819,27 21,27.478221 21,28.071757 v 17.856486 c 0,0.593527 0.504422,0.8972 1.0718,1.071757 h 5.178202 V 33.250001 h 7.499999 V 27 Z m 13.928202,0 v 20 h 5.178243 c 0.593535,0 1.071757,-0.47823 1.071757,-1.071757 V 28.071757 C 42.250002,27.478221 41.77178,27 41.178245,27 Z M 22.25,28.250001 h 11.250002 v 3.75 h -6.25 A 1.2501247,1.2501247 0 0 0 26,33.250001 v 12.500001 h -3.691441 c -0.0223,-0.0115 -0.0438,-0.0163 -0.0587,-0.0244 z m 15.000002,0 h 3.75 v 17.500001 h -3.75 z m -8.75,6.250001 V 47 h 6.249999 V 34.500002 Z m 1.250001,1.249999 h 3.749999 v 10.000001 h -3.749999 z"
+     id="path4-3" />
+</svg>

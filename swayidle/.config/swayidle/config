@@ -1,0 +1,3 @@
+timeout 180 ~/.local/share/quickshell-lockscreen/lock.sh
+timeout 210 'systemctl suspend'
+before-sleep ~/.local/share/quickshell-lockscreen/lock.sh
