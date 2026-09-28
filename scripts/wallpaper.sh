@@ -1,8 +1,8 @@
 #!/bin/bash
 
-#IMG=$(find ~/Pictures/Wallpapers/ -type f | sed "s|$HOME/Pictures/Wallpapers/||" | fzf --layout=reverse)
+IMG=$(find ~/Pictures/Wallpapers/ -type f | sed "s|$HOME/Pictures/Wallpapers/||" | fzf --layout=reverse)
 
-IMG=$(find ~/Pictures/Wallpapers/ -type f | sed "s|$HOME/Pictures/Wallpapers/||" | fzf --layout=reverse --preview="chafa --clear $HOME/Pictures/Wallpapers/{}" --preview-window='right:40%')
+#IMG=$(find ~/Pictures/Wallpapers/ -type f | sed "s|$HOME/Pictures/Wallpapers/||" | fzf --layout=reverse --preview="chafa --clear $HOME/Pictures/Wallpapers/{}" --preview-window='right:40%')
 
 if [ "$IMG" == "" ]; then exit 1; fi
 

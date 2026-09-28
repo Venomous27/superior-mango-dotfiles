@@ -1,5 +1,4 @@
-vim.lsp.config("marksman", {})
-vim.lsp.enable("marksman")
-
-vim.lsp.config("pyright", {})
+vim.lsp.enable("lua_ls")
 vim.lsp.enable("pyright")
+vim.lsp.enable("bashls")
+vim.lsp.enable("marksman")
