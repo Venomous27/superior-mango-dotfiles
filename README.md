@@ -15,7 +15,7 @@ UGH it took so much time but I got it done, tho I'll rebuild it from scratch whe
 ---
 
 ## Preview
-
+![Preview](screenshot/bleh.jpg)
 > will add images soon 
 ---
 
