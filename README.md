@@ -15,7 +15,7 @@ UGH it took so much time but I got it done, tho I'll rebuild it from scratch whe
 ---
 
 ## Preview
-![Preview](forshowcase.png)
+![Preview](screenshot.png)
 > will add images soon 
 ---
 
