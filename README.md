@@ -2,11 +2,10 @@
 
 ## [Join Fluxer Server](https://fluxer.gg/NkvInTZn)
 
-# A Simple Personal setup of MangoWM
+# A Simple Personal setup of MangoWM 
+
 ---
-Only MangoWM config was initially built using AI but I revised it whole cross-checking everything to the MangoWM's wiki. <br>
-UGH it took so much time but I got it done, tho I'll rebuild it from scratch when I'm feeling it :p
----
+
 ## Stuff I like about this setup
 * **Wayle Shell:** Comes with a GUI to setup and the status-bar got clickable buttons.
 * **Bash Scripts:** I made a couple of bash scripts for stuff like changing wallpaper, managing monitors, powermenu.
