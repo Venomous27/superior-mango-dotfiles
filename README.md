@@ -15,7 +15,28 @@
 
 ## Preview
 ![Preview](screenshot.png)
-> will add images soon 
+
+### 🎨 Pywal for Status bar, Terminal, and Rofi
+<div style="display: flex; gap: 10px;">
+  <img src="screenshot/2.png" width="380">
+  <img src="screenshot/5.png" width="380">
+  <img src="screenshot/3.png" width="380">
+  <img src="screenshot/4.png" width="380">
+</div>
+
+<div align="center">
+  <img src="screenshot/6.png" width="380">
+</div>
+
+### </> Bash Scripts
+<div style="display: flex; gap: 10px;">
+  <img src="screenshot/wal.jpg" width="380">
+  <img src="screenshot/moni.jpg" width="380">
+  <img src="screenshot/pwr.jpg" width="380">
+  <img src="screenshot/lay.jpg" width="380">
+</div>
+
+
 ---
 
 ## Softwares
@@ -69,7 +90,13 @@ cd ~/superior-mango-dotfiles
 ```bash
 stow mango foot scripts wayle swayidle rofi elio nvim pywal fastfetch
 ```
-### 5. Verify & Launch
+### 5. Make Scripts Executable 
+> Do this for all the scripts
+```bash
+chmod +x ~/superior-mango-dotfiles/scripts/wallpaper.sh 
+```
+
+### 6. Verify & Launch
 
 Reload Mango (or reboot), then confirm everything loaded:
 
