@@ -3,6 +3,7 @@
 OPTS="Shutdown
 Sleep
 Logout
+Lock
 Reboot"
 
 SEL=$(echo "$OPTS" | fzf --layout=reverse --border)
@@ -15,9 +16,12 @@ Sleep)
   systemctl suspend
   ;;
 Logout)
-  systemctl
+    loginctl terminate-user $USER
   ;;
 Reboot)
   systemctl reboot
+  ;;
+Lock)
+  swaylock
   ;;
 esac

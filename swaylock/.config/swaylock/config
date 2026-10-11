@@ -1,0 +1,23 @@
+clock
+timestr=%H:%M:%S
+datestr=%A, %b %d
+
+# Add an image as a background
+image=/home/venom/Pictures/Wallpapers/nature/hut-mountain.png
+
+# Fade in time
+fade-in=0.5
+
+effect-blur=20x6
+effect-greyscale
+
+indicator
+indicator-radius=200
+indicator-thickness=11
+effect-vignette=0.5:0.5
+ring-color=ffffff
+text-color=ffffff
+key-hl-color=999999
+line-color=00000000
+inside-color=00000088
+separator-color=00000000

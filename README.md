@@ -64,8 +64,36 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Code Editor** | [Neovim](https://neovim.io/) | - | **Optional** |
 ---
 
+## Some Keybinds
+| Keybinds | Action |
+| --- | --- |
+| **Apps 🚀** | 
+| `Super + Q` | Open Foot |
+| `Super + E` | Open Elio |
+| `Super + Ctrl + E` | Open Thunar |
+| `Super + B` | Open Zen Browser |
+| `Super + V` | Open Clipboard |
+| **Config ⚙️** | 
+| `Super + Backspace` | Reload Config |
+| **Window Control 🪟** | 
+| `Super + F` | Fullscreen Client |
+| `Super + T` | Toggle Float |
+| `Alt + ~` | Kill Client |
+| `ALT + h/j/k/l` | Focus left/down/up/right |
+| `Super + Shift + h/j/k/l` | Move Window left/down/up/right |
+| `Super + 1-0` | View tag 1-0 |
+| `Super + Shift + 1-0` | Send Window To tag 1-0 |
+| **Scripts 📜** |
+| `Super + W` | Wallpaper Changer |
+| `Super + P` | Setup Monitor |
+| `Super + N` | Change Layout |
+| `Super + Shift + E` | Powermenu |
+
+---
+
 ## Installation
 
+## Manual Install
 ### 1. Install Dependencies
 
 Install everything listed in the [Install These](#-Install-These-:P) table manually for now — some packages live in the official repos (`pacman`) and others in the AUR (`yay`/`paru`).
@@ -85,7 +113,8 @@ cd ~/superior-mango-dotfiles
 ```
 ### 4. Symlink using Stow
 > **⚠️ Note on Themes & Icons Folders:**
-> I haven't included the `gtk-themes` and `icons` folders in the Stow command because they contain my actual theme files like the icons and themes I downloaded from the internet. So **just back-up your existing themes and icons first, delete your old folders, and then run Stow to link these. Then you can copy your custom themes and icons into the new (symlinked) folders.**
+> I haven't included the `gtk-themes` folder in the Stow command because it contains my actual theme files like the GTK themes I downloaded from the internet. So **just back-up your existing themes first, delete your old folder, and then run Stow to link these. Then you can copy your themes into the new (symlinked) folder.**
+> For icons, just copy-paste the contents from `icons` folder into `~/.local/share/icons`
 > Pipewire not included as well. It contains Noise Removal Plugin
 ```bash
 stow mango foot scripts wayle swayidle rofi elio nvim pywal fastfetch
@@ -103,5 +132,9 @@ Reload Mango (or reboot), then confirm everything loaded:
 ```bash
 mmsg dispatch reload_config
 ```
+
+## Install Using Script
+> work in progress :p
+
 # Credits
 <br>Layout Switcher: https://github.com/SDG-Den </br>

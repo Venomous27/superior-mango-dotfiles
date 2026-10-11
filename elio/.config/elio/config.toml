@@ -1,0 +1,43 @@
+[ui]
+show_top_bar = true        # show top bar (default hidden)
+show_hidden = false         # show dotfiles by default
+start_in_grid = false       # start in grid view
+grid_zoom = 1              # grid density, 0–2
+folders_first = true      # mix folders and files (default true)
+default_sort = "modified"  # initial sort: name, modified, or size
+
+[preview]
+tab_width = 4 # tab-stop width in columns, 1–16 (default 4)
+
+[portal]
+terminal = "foot"  # detected and set automatically by elio portal enable; change if needed
+
+[places]
+show_devices = true
+entries = [
+  "home",
+  "desktop",
+  "documents",
+  { builtin = "downloads", icon = "" },
+  "pictures",
+  "music",
+  "videos",
+  { title = "Dotfiles", path = "~/superior-mango-dotfiles", icon = "󰚝" },
+  { title = "Sync", path = "~/Sync", icon = "󰚝" },
+  "trash",
+  "root",
+]
+[goto]
+entries = [
+  "top",
+  { builtin = "downloads", key = "D" },
+  "home",
+  "config",
+  "trash",
+  { title = "tmp", path = "/tmp", key = "T" },
+]
+
+[layout.panes]
+places = 7
+files = 45
+preview = 45
