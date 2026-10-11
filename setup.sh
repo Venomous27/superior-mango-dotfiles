@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "Updating and installing stuff from official repo"
-sudo pacman -Syu awww btop fish foot fzf grim slurp satty mpv neovim rofi swayidle swaylock thunar thunar-archive-plugin stow --noconfirm --needed
+sudo pacman -Syu awww btop fish foot fzf grim slurp satty mpv neovim rofi swayidle swaylock thunar thunar-archive-plugin stow gwenview --noconfirm --needed
 
 echo "Installing important stuff"
 sudo pacman -S networkmanager pavucontrol pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse xdg-desktop-portal-wlr xdg-utils --noconfirm --needed

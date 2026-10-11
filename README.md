@@ -59,9 +59,10 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | - | **Required** |
 | **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
 | **Terminal** | [Foot](https://codeberg.org/dnkl/foot.git) | - | Optional |
+| **Image Viewer** | [Gewnview](https://github.com/KDE/gwenview) | - | Optional |
 | **File Manager** | [Thunar](https://docs.xfce.org/xfce/thunar/start) | - | Optional |
 | **File Manager** | [Elio](https://elio-fm.github.io/) | - | Optional |
-| **Code Editor** | [Neovim](https://neovim.io/) | - | **Optional** |
+| **Code Editor** | [Neovim](https://neovim.io/) | - | Optional |
 ---
 
 ## Some Keybinds
