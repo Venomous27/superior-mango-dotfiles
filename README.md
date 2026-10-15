@@ -80,8 +80,8 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | `Super + F` | Fullscreen Client |
 | `Super + T` | Toggle Float |
 | `Alt + ~` | Kill Client |
-| `ALT + h/j/k/l` | Focus left/down/up/right |
-| `Super + Shift + h/j/k/l` | Move Window left/down/up/right |
+| `ALT + w/a/s/d` | Focus up/left/down/right |
+| `Super + Shift + w/a/s/d` | Move Window up/left/down/right |
 | `Super + 1-0` | View tag 1-0 |
 | `Super + Shift + 1-0` | Send Window To tag 1-0 |
 | **Scripts 📜** |

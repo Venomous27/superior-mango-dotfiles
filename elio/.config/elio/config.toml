@@ -10,7 +10,7 @@ default_sort = "modified"  # initial sort: name, modified, or size
 tab_width = 4 # tab-stop width in columns, 1–16 (default 4)
 
 [portal]
-terminal = "foot"  # detected and set automatically by elio portal enable; change if needed
+terminal = "kitty"  # detected and set automatically by elio portal enable; change if needed
 
 [places]
 show_devices = true
@@ -20,21 +20,26 @@ entries = [
   "documents",
   { builtin = "downloads", icon = "" },
   "pictures",
-  "music",
   "videos",
   { title = "Dotfiles", path = "~/superior-mango-dotfiles", icon = "󰚝" },
   { title = "Sync", path = "~/Sync", icon = "󰚝" },
+  { title = "Editing", path = "~/Editing", icon = "󰚝" },
+  { title = "Projects", path = "~/Projects", icon = "󰚝" },
   "trash",
   "root",
 ]
 [goto]
 entries = [
   "top",
-  { builtin = "downloads", key = "D" },
+  { builtin = "downloads", key = "d" },
+  { title = "documents", path = "~/Documents", key = "D" },
+  { title = "pictures", path = "~/Pictures", key = "p" },
+  { title = "sync", path = "~/Sync", key = "s" },
   "home",
   "config",
   "trash",
   { title = "tmp", path = "/tmp", key = "T" },
+  { title = "dotfiles", path = "~/superior-mango-dotfiles", key = "." },
 ]
 
 [layout.panes]
