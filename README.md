@@ -48,7 +48,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | - | **Required** |
 | **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | - | **Required** |
 | **Wallpaper Engine** | [awww](https://codeberg.org/LGFae/awww) | - | **Required** |
-| **App Launcher** | [Rofi-Wayland](https://github.com/lbonn/rofi) | - | **Required** |
+| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | - | **Required** |
 | **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | - | **Required** |
 | **Brightness Control** | [brightnessctl](https://github.com/Hummer12007/brightnessctl) | - | **Required** |
 | **Screenshot** | [grim](https://gitlab.freedesktop.org/emersion/grim) | - | **Required** |
