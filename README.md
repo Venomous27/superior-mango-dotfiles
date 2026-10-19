@@ -69,6 +69,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | Keybinds | Action |
 | --- | --- |
 | **Apps 🚀** | 
+| `Super + Spacebar` | Open App Launcher | 
 | `Super + Q` | Open Foot |
 | `Super + E` | Open Elio |
 | `Super + Ctrl + E` | Open Thunar |

@@ -10,4 +10,4 @@ awww img ~/Pictures/Wallpapers/$IMG --transition-type fade --transition-duration
 
 wal -i ~/Pictures/Wallpapers/$IMG
 
-setsid wayle panel restart </dev/null >/dev/null 2>&1 
+setsid wayle panel restart </dev/null >/dev/null 2>&1

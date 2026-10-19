@@ -1,0 +1,24 @@
+@theme "~/.config/rofi/theme.rasi"
+@import "~/.cache/wal/colors-rofi-dark.rasi"
+
+configuration {
+  modes: "emoji";
+  font: "JetBrainsMono Nerd Font Mono 15";
+  show-icons: false;
+}
+
+window {
+    width: 27%;
+//    width: 21%;
+    border-color: @selected-normal-background;
+    border: 2px;
+    padding: 5px;
+
+}
+
+listview {
+    columns: 4;
+    fixed-height: false;
+    lines: 11;
+//   lines: 7;
+}
