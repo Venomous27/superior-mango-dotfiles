@@ -44,12 +44,12 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 
 | Category | Name | Description | Need |
 |---|---|---|---|
-| **Compositor** | [MangoWM](https://mangowm.github.io/) | - | **Ofcourse you need it, it's the WM** |
-| **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | - | **Required** |
-| **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | - | **Required** |
-| **Wallpaper Engine** | [awww](https://codeberg.org/LGFae/awww) | - | **Required** |
-| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | - | **Required** |
-| **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | - | **Required** |
+| **Compositor** | [MangoWM](https://mangowm.github.io/) | A lightweight and feature-rich Wayland compositor based on dwl. | **Ofcourse you need it, it's the WM** |
+| **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | Symlink manager that makes it easy to organize and install dotfiles | **Required** |
+| **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | Wayland desktop shell written in Rust with GTK4 and Relm4 | **Required** |
+| **Wallpaper Engine** | [awww](https://codeberg.org/LGFae/awww) | Wallpaper daemon for wayland | **Required** |
+| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | A window switcher, application launcher and dmenu replacement | **Required** |
+| **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | Generates a color palette from the dominant colors in an image. | **Required** |
 | **Brightness Control** | [brightnessctl](https://github.com/Hummer12007/brightnessctl) | - | **Required** |
 | **Screenshot** | [grim](https://gitlab.freedesktop.org/emersion/grim) | - | **Required** |
 | **Screenshot Editor** | [satty](https://github.com/gabm/satty) | - | **Required** |
@@ -58,6 +58,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **XDG Utilities** | [xdg-utils](https://gitlab.freedesktop.org/xdg/xdg-utils) | - | **Required** |
 | **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | - | **Required** |
 | **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
+| **Emoji Picker** | [Rofi-emoji](https://github.com/Mange/rofi-emoji) | - | Optional |
 | **Terminal** | [Foot](https://codeberg.org/dnkl/foot.git) | - | Optional |
 | **Image Viewer** | [Gewnview](https://github.com/KDE/gwenview) | - | Optional |
 | **File Manager** | [Thunar](https://docs.xfce.org/xfce/thunar/start) | - | Optional |
@@ -95,7 +96,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 
 ## Installation
 
-## Manual Install
+## Manual Install (recommended)
 ### 1. Install Dependencies
 
 Install everything listed in the [Install These](#-Install-These-:P) table manually for now — some packages live in the official repos (`pacman`) and others in the AUR (`yay`/`paru`).
@@ -135,8 +136,22 @@ Reload Mango (or reboot), then confirm everything loaded:
 mmsg dispatch reload_config
 ```
 
-## Install Using Script
-> work in progress :p
+### Install Using Script
+
+> [!WARNING]
+> This script was tested on a **fresh install** of CachyOS. It is strongly recommended to review [setup.sh](setup.sh) before running it so you understand what changes will be made.
+
+> [!CAUTION]
+> I will not be held responsible for any damage or other stuff—run it at your own risk.
+
+Some packages have been commented out based on personal preference. If you already have an AUR helper installed, remember to comment out that section.
+
+To run the script:
+
+```bash
+cd ~/superior-mango-dotfiles
+chmod +x setup.sh
+./setup.sh
 
 # Credits
 <br>Layout Switcher: https://github.com/SDG-Den </br>

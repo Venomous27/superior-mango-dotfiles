@@ -4,7 +4,7 @@ echo "Updating and installing stuff from official repo"
 sudo pacman -Syu awww btop fish foot fzf grim slurp satty mpv neovim rofi rofi-emoji swayidle swaylock thunar thunar-archive-plugin stow gwenview --noconfirm --needed
 
 echo "Installing important stuff"
-sudo pacman -S networkmanager pavucontrol pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse xdg-desktop-portal-wlr xdg-utils --noconfirm --needed
+sudo pacman -S networkmanager brightnessctl pavucontrol pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse xdg-desktop-portal-wlr xdg-utils --noconfirm --needed
 
 echo "Setting up yay"
 git clone https://aur.archlinux.org/yay.git
