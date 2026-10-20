@@ -55,6 +55,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Screenshot Editor** | [satty](https://github.com/gabm/satty) | - | **Required** |
 | **Screenshot Selection** | [slurp](https://gitlab.freedesktop.org/emersion/slurp) | - | **Required** |
 | **Idle Manager** | [swayidle](https://github.com/swaywm/swayidle) | - | **Required** |
+| **Shell** | [Fish](https://fishshell.com/) | - | **Required** |
 | **XDG Utilities** | [xdg-utils](https://gitlab.freedesktop.org/xdg/xdg-utils) | - | **Required** |
 | **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | - | **Required** |
 | **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
@@ -152,6 +153,7 @@ To run the script:
 cd ~/superior-mango-dotfiles
 chmod +x setup.sh
 ./setup.sh
+```
 
 # Credits
 <br>Layout Switcher: https://github.com/SDG-Den </br>
