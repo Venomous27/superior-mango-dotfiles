@@ -18,24 +18,11 @@
 
 ### 🎨 Pywal for Status bar, Terminal, and Rofi
 <div style="display: flex; gap: 10px;">
-  <img src="screenshot/2.png" width="380">
-  <img src="screenshot/5.png" width="380">
-  <img src="screenshot/3.png" width="380">
-  <img src="screenshot/4.png" width="380">
+  <img src="screenshot/1.webp" width="380">
+  <img src="screenshot/2.webp" width="380">
+  <img src="screenshot/3.webp" width="380">
+  <img src="screenshot/4.webp" width="380">
 </div>
-
-<div align="center">
-  <img src="screenshot/6.png" width="380">
-</div>
-
-### </> Bash Scripts
-<div style="display: flex; gap: 10px;">
-  <img src="screenshot/wal.jpg" width="380">
-  <img src="screenshot/moni.jpg" width="380">
-  <img src="screenshot/pwr.jpg" width="380">
-  <img src="screenshot/lay.jpg" width="380">
-</div>
-
 
 ---
 
