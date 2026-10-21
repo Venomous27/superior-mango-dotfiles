@@ -1,10 +1,22 @@
 #!/bin/bash
 
+echo "taking backup of your stuff"
+mkdir -p ~/old-configs-backup
+[ -e ~/.config/mango ] && mv ~/.config/mango ~/old-configs-backup/
+[ -e ~/.config/fish ] && mv ~/.config/fish ~/old-configs-backup/
+[ -e ~/.config/fastfetch ] && mv ~/.config/fastfetch ~/old-configs-backup/
+[ -e ~/.config/nvim ] && mv ~/.config/nvim ~/old-configs-backup/
+[ -e ~/.config/rofi ] && mv ~/.config/rofi ~/old-configs-backup/
+[ -e ~/.config/pipewire ] && mv ~/.config/pipewire ~/old-configs-backup/
+[ -e ~/.config/swayidle ] && mv ~/.config/swayidle ~/old-configs-backup/
+[ -e ~/.config/swaylock ] && mv ~/.config/swaylock ~/old-configs-backup/
+[ -e ~/.themes ] && mv ~/.themes ~/old-configs-backup/
+
 echo "Updating and installing stuff from official repo"
-sudo pacman -Syu awww btop fish foot fzf grim slurp satty mpv neovim rofi rofi-emoji swayidle swaylock thunar thunar-archive-plugin stow gwenview --noconfirm --needed
+sudo pacman -Syu awww btop fish foot fzf grim slurp satty mpv neovim rofi rofi-emoji swayidle swaylock thunar thunar-archive-plugin stow gwenview fastfetch --noconfirm --needed
 
 echo "Installing important stuff"
-sudo pacman -S networkmanager brightnessctl pavucontrol pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse xdg-desktop-portal-wlr xdg-utils --noconfirm --needed
+sudo pacman -S base-devel git networkmanager wireplumber brightnessctl pavucontrol pipewire-alsa pipewire-audio pipewire-jack pipewire-pulse xdg-desktop-portal-wlr xdg-utils --noconfirm --needed
 
 echo "Setting up yay"
 git clone https://aur.archlinux.org/yay.git
@@ -13,15 +25,15 @@ makepkg -si
 cd ~
 
 echo "Installing stuff from AUR"
-yay -S mangowm-git wayle-bin python-pywal clipse elio
+yay -S mangowm-git wayle-bin python-pywal clipse elio --noconfirm
 
 #echo "Installing Venom's need"
-#yay -s obs-multi-rtmp ttf-ms-win10-auto
+#yay -s obs-multi-rtmp ttf-ms-win10-auto --noconfirm
 #sudo pacman -S obs-studio python syncthing zed zen-browser-bin localsend --noconfirm --needed
 
 echo "Stowing configs"
 cd ~/superior-mango-dotfiles
-stow mango foot fastfetch elio gtk-themes pywal pipewire wayle swayidle rofi nvim
+stow -v -R mango foot fastfetch elio gtk-themes pywal pipewire wayle swayidle swaylock rofi nvim
 
 echo "Making the scripts executable"
 chmod +x ~/superior-mango-dotfiles/scripts/monitor.sh

@@ -55,10 +55,12 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Screenshot Editor** | [satty](https://github.com/gabm/satty) | - | **Required** |
 | **Screenshot Selection** | [slurp](https://gitlab.freedesktop.org/emersion/slurp) | - | **Required** |
 | **Idle Manager** | [swayidle](https://github.com/swaywm/swayidle) | - | **Required** |
+| **Lock Screen** | [swaylock](https://github.com/swaywm/swaylock) | - | **Required** |
 | **Shell** | [Fish](https://fishshell.com/) | - | **Required** |
 | **XDG Utilities** | [xdg-utils](https://gitlab.freedesktop.org/xdg/xdg-utils) | - | **Required** |
 | **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | - | **Required** |
 | **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
+| **Night Light** | [wlsunset](https://github.com/kennylevinsen/wlsunset) | - | Optional | 
 | **Emoji Picker** | [Rofi-emoji](https://github.com/Mange/rofi-emoji) | - | Optional |
 | **Terminal** | [Foot](https://codeberg.org/dnkl/foot.git) | - | Optional |
 | **Image Viewer** | [Gewnview](https://github.com/KDE/gwenview) | - | Optional |
@@ -150,6 +152,7 @@ Some packages have been commented out based on personal preference. If you alrea
 To run the script:
 
 ```bash
+git clone https://codeberg.org/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
 cd ~/superior-mango-dotfiles
 chmod +x setup.sh
 ./setup.sh
