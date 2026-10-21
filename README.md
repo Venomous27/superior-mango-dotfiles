@@ -145,7 +145,7 @@ mmsg dispatch reload_config
 > This script was tested on a **fresh install** of CachyOS. It is strongly recommended to review [setup.sh](setup.sh) before running it so you understand what changes will be made.
 
 > [!CAUTION]
-> I will not be held responsible for any damage or other stuff—run it at your own risk.
+> I also checked it on a working pc (configured) and it gave errors. I will not be held responsible for any damage or other stuff—run it at your own risk.
 
 Some packages have been commented out based on personal preference. If you already have an AUR helper installed, remember to comment out that section.
 
