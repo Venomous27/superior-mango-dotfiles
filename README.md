@@ -34,7 +34,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Compositor** | [MangoWM](https://mangowm.github.io/) | A lightweight and feature-rich Wayland compositor based on dwl. | **Ofcourse you need it, it's the WM** |
 | **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | Symlink manager that makes it easy to organize and install dotfiles | **Required** |
 | **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | Wayland desktop shell written in Rust with GTK4 and Relm4 | **Required** |
-| **Wallpaper Engine** | [awww](https://codeberg.org/LGFae/awww) | Wallpaper daemon for wayland | **Required** |
+| **Wallpaper Engine** | [awww](https://github.com/LGFae/awww) | Wallpaper daemon for wayland | **Required** |
 | **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | A window switcher, application launcher and dmenu replacement | **Required** |
 | **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | Generates a color palette from the dominant colors in an image. | **Required** |
 | **Brightness Control** | [brightnessctl](https://github.com/Hummer12007/brightnessctl) | - | **Required** |
@@ -49,7 +49,7 @@ Since this is my personal setup, I'm going to list every software/dependency I u
 | **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
 | **Night Light** | [wlsunset](https://github.com/kennylevinsen/wlsunset) | - | Optional | 
 | **Emoji Picker** | [Rofi-emoji](https://github.com/Mange/rofi-emoji) | - | Optional |
-| **Terminal** | [Foot](https://codeberg.org/dnkl/foot.git) | - | Optional |
+| **Terminal** | [Foot](https://github.com/dnkl/foot.git) | - | Optional |
 | **Image Viewer** | [Gewnview](https://github.com/KDE/gwenview) | - | Optional |
 | **File Manager** | [Thunar](https://docs.xfce.org/xfce/thunar/start) | - | Optional |
 | **File Manager** | [Elio](https://elio-fm.github.io/) | - | Optional |
@@ -101,7 +101,7 @@ Will proly make a install script in future...
 ### 3. Clone the Repository
 
 ```bash
-git clone https://codeberg.org/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
+git clone https://github.com/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
 cd ~/superior-mango-dotfiles
 ```
 ### 4. Symlink using Stow
@@ -139,7 +139,7 @@ Some packages have been commented out based on personal preference. If you alrea
 To run the script:
 
 ```bash
-git clone https://codeberg.org/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
+git clone https://github.com/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
 cd ~/superior-mango-dotfiles
 chmod +x setup.sh
 ./setup.sh
