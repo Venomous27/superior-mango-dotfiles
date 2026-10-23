@@ -45,3 +45,21 @@ chmod +x ~/.config/mango/layout-switcher.sh
 #Reference
 #https://github.com/olingern/arch-dotfiles/blob/master/setup.sh
 #https://github.com/vmax1g/old-dotfiles/blob/main/install.sh
+
+#Readme for script
+#> [!WARNING]
+#> This script was tested on a **fresh install** of CachyOS. It is strongly recommended to review [setup.sh](setup.sh) before running it so you understand what changes will be made.
+
+#> [!CAUTION]
+#> I also checked it on a working pc (configured) and it gave errors. I will not be held responsible for any damage or other stuff—run it at your own risk.
+
+#Some packages have been commented out based on personal preference. If you already have an AUR helper installed, remember to comment out that section.
+
+#To run the script:
+
+#```bash
+#git clone https://github.com/Venomous27/superior-mango-dotfiles.git ~/superior-mango-dotfiles
+#cd ~/superior-mango-dotfiles
+#chmod +x setup.sh
+#./setup.sh
+#```
