@@ -1,13 +1,13 @@
 if status is-interactive
 
-# ---------------------------
-# PATH
-# ---------------------------
+    # ---------------------------
+    # PATH
+    # ---------------------------
     fzf --fish | source
 
-# ---------------------------
-# ALIASES & ABBREVIATIONS
-# ---------------------------
+    # ---------------------------
+    # ALIASES & ABBREVIATIONS
+    # ---------------------------
     alias tty-clock='tty-clock -c -s -b -C 6'
     alias ff='fastfetch --config ~/.config/fastfetch/current.jsonc'
     alias v='nvim'
@@ -15,6 +15,8 @@ if status is-interactive
     alias ss="pacman -Ss"
     alias r="sudo pacman -Rns"
     alias c="clear"
+    alias h="helix"
+    alias "sudo h" = sudo helix --config ~/.config/helix/config.toml
 
 end
 
