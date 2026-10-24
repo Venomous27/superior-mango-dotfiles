@@ -16,7 +16,7 @@ if status is-interactive
     alias r="sudo pacman -Rns"
     alias c="clear"
     alias h="helix"
-    alias "sudo h" = sudo helix --config ~/.config/helix/config.toml
+    #   alias "sudo h" = sudo helix -c ~/.config/helix/config.toml
 
 end
 

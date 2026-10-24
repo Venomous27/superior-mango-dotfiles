@@ -1,7 +1,8 @@
 #!/bin/bash
 
 HDD_PATH="/run/media/$USER/Seagate Basic"
-BACKUP_DIR="$HDD_PATH/Backup_$(date +%d-%m-%Y)"
+#BACKUP_DIR="$HDD_PATH/Backup_$(date +%d-%m-%Y)" #make new folder and takes whole backup everytime
+BACKUP_DIR="$HDD_PATH/Backup" #keeps old files and only added new
 SOURCES=(
     "$HOME/Pictures"
     "$HOME/Documents"
