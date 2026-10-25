@@ -40,6 +40,12 @@ theme-provider = "pywal"
 pywal-contrast = [4.0]
 theming-monitor = "HDMI-A-1"
 
+[modules.dashboard]
+icon-color = "accent"
+
+[modules.mango-workspaces]
+active-indicator = "underline"
+
 [modules.idle-inhibit]
 label-show = false
 icon-color = "accent"
@@ -64,6 +70,7 @@ icon-color = "accent"
 button-bg-color = "transparent"
 label-color = "fg-default"
 icon-color = "accent"
+label-show = false
 
 [modules.brightness]
 button-bg-color = "transparent"
@@ -81,6 +88,8 @@ label-color = "fg-default"
 
 [modules.network]
 button-bg-color = "transparent"
+label-show = false
+
 label-color = "fg-default"
 icon-color = "accent"
 
