@@ -1,0 +1,14 @@
+[bar]
+button-rounding = "none"
+
+[styling]
+rounding = "none"
+
+[modules.idle-inhibit]
+button-bg-color = "transparent"
+
+[modules.mango-workspaces]
+container-bg-color = "transparent"
+
+[modules.media]
+button-bg-color = "transparent"

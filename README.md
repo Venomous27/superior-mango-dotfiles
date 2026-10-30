@@ -27,33 +27,34 @@
 ---
 
 ## Softwares
-Since this is my personal setup, I'm going to list every software/dependency I use. Download only what you need :3<br>Don't forget to replace keybinds for *Optional* software with the ones you use.
+Since this is my personal setup, I'm going to list every software/dependency I use. Download only what you need :3<br>Don't forget to replace keybinds for *other* software with the ones you use.
 
-| Category | Name | Description | Need |
-|---|---|---|---|
-| **Compositor** | [MangoWM](https://mangowm.github.io/) | A lightweight and feature-rich Wayland compositor based on dwl. | **Ofcourse you need it, it's the WM** |
-| **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | Symlink manager that makes it easy to organize and install dotfiles | **Required** |
-| **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | Wayland desktop shell written in Rust with GTK4 and Relm4 | **Required** |
-| **Wallpaper Engine** | [awww](https://github.com/LGFae/awww) | Wallpaper daemon for wayland | **Required** |
-| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | A window switcher, application launcher and dmenu replacement | **Required** |
-| **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | Generates a color palette from the dominant colors in an image. | **Required** |
-| **Brightness Control** | [brightnessctl](https://github.com/Hummer12007/brightnessctl) | - | **Required** |
-| **Screenshot** | [grim](https://gitlab.freedesktop.org/emersion/grim) | - | **Required** |
-| **Screenshot Editor** | [satty](https://github.com/gabm/satty) | - | **Required** |
-| **Screenshot Selection** | [slurp](https://gitlab.freedesktop.org/emersion/slurp) | - | **Required** |
-| **Idle Manager** | [swayidle](https://github.com/swaywm/swayidle) | - | **Required** |
-| **Lock Screen** | [swaylock](https://github.com/swaywm/swaylock) | - | **Required** |
-| **Shell** | [Fish](https://fishshell.com/) | - | **Required** |
-| **XDG Utilities** | [xdg-utils](https://gitlab.freedesktop.org/xdg/xdg-utils) | - | **Required** |
-| **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | - | **Required** |
-| **Audio** | [PipeWire](https://pipewire.org/) | - | **Required** |
-| **Night Light** | [wlsunset](https://github.com/kennylevinsen/wlsunset) | - | Optional | 
-| **Emoji Picker** | [Rofi-emoji](https://github.com/Mange/rofi-emoji) | - | Optional |
-| **Terminal** | [Foot](https://github.com/dnkl/foot.git) | - | Optional |
-| **Image Viewer** | [Gewnview](https://github.com/KDE/gwenview) | - | Optional |
-| **File Manager** | [Thunar](https://docs.xfce.org/xfce/thunar/start) | - | Optional |
-| **File Manager** | [Elio](https://elio-fm.github.io/) | - | Optional |
-| **Code Editor** | [Neovim](https://neovim.io/) | - | Optional |
+| Category | Name | Description |
+|---|---|---|
+| **Compositor** | [MangoWM](https://mangowm.github.io/) | A lightweight and feature-rich Wayland compositor based on dwl. |
+| **Symlink** | [GNU Stow](https://www.gnu.org/software/stow/) | Symlink manager that makes it easy to organize and install dotfiles. |
+| **Status Bar** | [Wayle](https://wayle.app/guide/getting-started) | Wayland desktop shell written in Rust with GTK4 and Relm4. |
+| **Wallpaper Engine** | [awww](https://github.com/LGFae/awww) | Animated wallpaper daemon for Wayland that manages and transitions wallpapers. |
+| **App Launcher** | [Rofi](https://github.com/davatorium/rofi) | A window switcher, application launcher and dmenu replacement. |
+| **Color Generation** | [Pywal](https://github.com/dylanaraps/pywal) | Generates a color palette from the dominant colors in an image. |
+| **Brightness Control** | [brightnessctl](https://github.com/Hummer12007/brightnessctl) | Command-line utility for controlling screen and keyboard brightness. |
+| **Screenshot** | [grim](https://gitlab.freedesktop.org/emersion/grim) | Screenshot utility for capturing Wayland desktops and windows. |
+| **Screenshot Editor** | [satty](https://github.com/gabm/satty) | Screenshot annotation tool for drawing, highlighting and editing screenshots. |
+| **Screenshot Selection** | [slurp](https://gitlab.freedesktop.org/emersion/slurp) | Selects a region of the screen for screenshot and screen-recording utilities. |
+| **Idle Manager** | [swayidle](https://github.com/swaywm/swayidle) | Idle management daemon that executes commands after a specified period of inactivity. |
+| **Lock Screen** | [swaylock](https://github.com/swaywm/swaylock) | Screen locker for Wayland compositors. |
+| **Shell** | [Fish](https://fishshell.com/) | Smart and user-friendly command-line shell with autosuggestions and syntax highlighting. |
+| **XDG Utilities** | [xdg-utils](https://gitlab.freedesktop.org/xdg/xdg-utils) | Set of command-line tools for managing default applications and opening files or URLs. |
+| **XDG Portal** | [xdg-desktop-portal-wlr](https://github.com/emersion/xdg-desktop-portal-wlr) | XDG Desktop Portal backend for wlroots-based Wayland compositors, providing screen sharing and screenshot interfaces. |
+| **Audio** | [PipeWire](https://pipewire.org/) | Low-latency multimedia framework for handling audio and video streams on Linux. |
+| **Night Light** | [wlsunset](https://github.com/kennylevinsen/wlsunset) | Adjusts display color temperature according to the time of day to reduce blue light at night. |
+| **Emoji Picker** | [Rofi-emoji](https://github.com/Mange/rofi-emoji) | Rofi extension for searching and selecting emojis. |
+| **Terminal** | [Foot](https://github.com/dnkl/foot) | Lightweight and fast terminal emulator designed specifically for Wayland. |
+| **Image Viewer** | [Gwenview](https://github.com/KDE/gwenview) | Fast and feature-rich image viewer with basic image editing capabilities. |
+| **File Manager** | [Thunar](https://docs.xfce.org/xfce/thunar/start) | Lightweight graphical file manager from the XFCE desktop environment. |
+| **File Manager** | [Elio](https://elio-fm.github.io/) | Lightweight terminal-based file manager with a keyboard-driven workflow. |
+| **Code Editor** | [Helix](https://helix-editor.com/) | Modern terminal-based text editor with built-in language server support, syntax highlighting and modal editing. |
+
 ---
 
 ## Some Keybinds
@@ -128,7 +129,7 @@ mmsg dispatch reload_config
 
 ### Install Using Script
 
-> I'm working on it. you can still check it you tho [setup.sh](setup.sh)
+> I'm working on it. You can still check it out tho [setup.sh](setup.sh)
 
 # Credits
 <br>Layout Switcher: https://github.com/SDG-Den </br>

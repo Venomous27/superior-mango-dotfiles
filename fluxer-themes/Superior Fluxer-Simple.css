@@ -1,0 +1,69 @@
+/*
+ * @name Superior Fluxer
+ * @author Mr.Venomous
+ */
+* {
+	border-radius: 0px !important;
+}
+
+:root {
+	/* backgrounds */
+	--background-primary: #141618;
+	--background-channel-header: #141618;
+	--background-header-primary: #141618;
+	--background-header-primary-hover: #141618;
+	--background-header-secondary: #141618;
+
+	/* text */
+	--text-primary: #ebdbb2;
+	--text-chat: #ebdbb2;
+	--text-chat-muted: #a89984;
+	--text-link: #e13c5e;
+	--text-on-brand-primary: #ebdbb2;
+	--text-primary-muted: #7f7363;
+	--text-secondary: #d5c4a1;
+	--text-tertiary: #928374;
+	--text-tertiary-muted: #928374;
+
+	/* accents */
+	--accent-danger: #ea6962;
+	--accent-info: #7daea3;
+	--accent-primary: #323ca4;
+	--accent-purple: #d3869b;
+	--accent-success: #a9b665;
+	--accent-warning: #e78a4e;
+
+	/* brand */
+	--brand-primary: #323ca4;
+
+	/* status */
+	--status-danger: #ea6962;
+	--status-dnd: #ea6962;
+	--status-idle: #e78a4e;
+	--status-offline: #928374;
+	--status-online: #a9b665;
+	--status-warning: #d8a657;
+}
+
+/* square pfp: radius is already 0 above, this removes the circle mask */
+[data-flx="ui.base-avatar.image-frame"] {
+	mask: unset !important;
+}
+
+/* avatar border colored by status (replaces the status dot) */
+[data-flx="ui.base-avatar.status-container"] {
+	display: none !important;
+}
+[data-flx="ui.status-aware-avatar.avatar"] {
+	outline: 2px solid var(--status-offline);
+	outline-offset: 2px;
+}
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="online"] {
+	outline-color: var(--status-online);
+}
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="idle"] {
+	outline-color: var(--status-idle);
+}
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="dnd"] {
+	outline-color: var(--status-dnd);
+}

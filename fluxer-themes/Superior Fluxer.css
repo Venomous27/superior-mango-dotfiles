@@ -1,7 +1,178 @@
 /*
  * @name Superior Fluxer
  * @author Mr.Venomous
+ * @description Color palette taken from the system24 themes.
+ * @credits Avatar (square pfp + status ring) and panel border/gap/label styling taken from the Sakura System24 theme, done with the help of Claude (Anthropic).
  */
-* {
-    border-radius: 0px !important;
+* { border-radius: 0 !important; }
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+:root {
+	--font-primary: "Inter", sans-serif;
+	--font-sans: "Inter", sans-serif;
+	--background-primary: #141618;
+	--background-channel-header: #141618;
+	--background-header-primary: #141618;
+	--background-header-primary-hover: #141618;
+	--background-header-secondary: #141618;
+	--text-primary: #ebdbb2;
+	--text-chat: #ebdbb2;
+	--text-chat-muted: #a89984;
+	--text-link: #E13C5E;
+	--text-on-brand-primary: #ebdbb2;
+	--text-primary-muted: #7f7363;
+	--text-secondary: #d5c4a1;
+	--text-tertiary: #928374;
+	--text-tertiary-muted: #928374;
+	--accent-danger: #ea6962;
+	--accent-info: #7daea3;
+	--accent-primary: #323ca4;
+	--accent-purple: #d3869b;
+	--accent-success: #a9b665;
+	--accent-warning: #e78a4e;
+	--brand-primary: #323ca4;
+	--status-danger: #ea6962;
+	--status-dnd: #ea6962;
+	--status-idle: #e78a4e;
+	--status-offline: #928374;
+	--status-online: #a9b665;
+	--status-warning: #d8a657;
 }
+
+/* square pfp (radius is already 0 above; this removes the circle mask) */
+[data-flx="ui.base-avatar.image-frame"] { mask: unset !important; }
+
+/* status-colored avatar ring with a gap, replaces the status dot */
+[data-flx="ui.base-avatar.status-container"] { display: none !important; }
+[data-flx="ui.status-aware-avatar.avatar"] {
+	outline: 2px solid var(--status-offline);
+	outline-offset: 2px;
+}
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="online"] { outline-color: var(--status-online); }
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="idle"] { outline-color: var(--status-idle); }
+[data-flx="ui.status-aware-avatar.avatar"][data-flx-status="dnd"] { outline-color: var(--status-dnd); }
+
+/* remove default dividers/borders */
+[class*="UserArea.module__separator_"],
+[class*="OutlineFrame.module__divider_"],
+[class*="ChannelIndexPage.module__memberListDivider_"] { display: none; }
+
+[class*="ActiveNowSidebar.module__sidebar_"],
+[class*="OutlineFrame.module__frame_"],
+[class*="ChannelHeader.module__headerContainer_"] { border: none !important; }
+
+/* panel borders, no blur */
+:is(
+	[data-flx="app.guilds-layout.guild-list.guild-list-scroller-wrapper"],
+	[data-flx="channel.direct-message.dm-list.dm-list-container"],
+	[class*="GuildNavbar.module__guildNavbarContainer_"],
+	[data-flx="app.guilds-layout.user-area-wrapper"],
+	[class*="ChannelHeader.module__headerWrapper_"],
+	[class*="MemberListContainer.module__memberListContainer_"],
+	[class*="ChannelChatLayout.module__messagesArea_"],
+	[data-flx="channel.channel-chat-layout.textarea-area"],
+	[class*="DMFriendsView.module__content_"],
+	[class*="ActiveNowSidebar.module__sidebar_"],
+	[class*="ChannelIndexPage.module__searchPanel_"],
+	[class*="GuildMembersPage.module__pageContainer_"],
+	[class*="VoiceCallView.module__root_"],
+	[class*="Modal.module__root_"]
+) {
+	border: 2px solid #504945 !important;
+	backdrop-filter: none !important;
+	transition: border-color 0.2s;
+
+	&:hover,
+	&:focus-within { border-color: #928374 !important; }
+
+	/* label sitting on the border */
+	&::after {
+		display: block;
+		position: absolute;
+		top: -11px;
+		left: 8px;
+		z-index: 100;
+		padding: 2px 4px;
+		font: bold 16px/14px "Courier New", monospace;
+		background: #141618;
+		color: #504945;
+		transition: color 0.2s;
+	}
+	&:hover::after,
+	&:focus-within::after { color: #928374; }
+}
+
+[class*="Modal.module__modalBackdrop_"] { backdrop-filter: none !important; }
+
+/* ---------------- panel gaps ---------------- */
+[class*="AppLayout.module__appLayout_"] { padding: 4px; gap: 4px; }
+
+[class*="GuildsLayout.module__guildsLayoutContainer_"],
+[class*="GuildsLayout.module__contentContainer_"],
+[data-flx="channel.direct-message.dm-layout.dm-layout-container"],
+[class*="OutlineFrame.module__frame_"][class*="OutlineFrame.module__frameShowTop_"],
+[class*="GuildLayout.module__guildLayoutContainerWithNagbar_"],
+[class*="ChannelIndexPage.module__channelGrid_"],
+[class*="GuildLayout.module__guildLayoutContent_"],
+[data-flx="channel.direct-message.dm-friends-view.container"],
+[class*="DMFriendsView.module__mainColumn_"] { gap: 4px; }
+
+[data-flx="channel.channel-chat-layout.container"] { gap: 5px; }
+
+/* margin instead of gap so hidden panels leave no empty space */
+[class*="MemberListContainer.module__memberListContainer_"],
+[class*="ChannelIndexPage.module__searchPanel_"] {
+	margin-left: 4px;
+	width: calc(100% - 4px);
+}
+[class*="MemberListContainer.module__memberListContainer_"] {
+	min-width: 17rem;
+	max-width: 17rem;
+}
+
+/* keep panels sized right with the gaps + borders */
+[class*="GuildsLayout.module__guildListScrollerWrapper_"],
+[class*="GuildNavbar.module__guildNavbarContainer_"],
+[class*="GuildNavbarSkeleton.module__skeletonContainer_"],
+[data-flx="channel.direct-message.dm-layout.dm-list-column--2"] {
+	width: -webkit-fill-available;
+	height: calc(100% - var(--footer-box-height) - 8px);
+}
+
+[data-flx="app.guilds-layout.user-area-wrapper"] {
+	width: calc(var(--layout-guild-list-width) + var(--layout-sidebar-width) + 4px);
+	padding: 0;
+}
+
+[class*="ChannelIndexPage.module__channelGrid_"] { display: flex; flex-direction: column; }
+
+/* ---------------- panel labels ---------------- */
+/* don't clip the labels */
+[class*="GuildNavbar.module__guildNavbarContainer_"],
+[class*="ChannelChatLayout.module__messagesArea_"],
+[data-flx="channel.channel-chat-layout.container"],
+[data-flx="channel.direct-message.dm-list.dm-list-container"],
+[class*="ChannelIndexPage.module__channelGrid_"],
+[class*="GuildLayout.module__guildMainContent_"],
+[class*="ChannelLayout.module__channelLayoutContainer_"],
+[class*="ChannelHeader.module__headerWrapper_"],
+[class*="ChannelIndexPage.module__contentGrid_"],
+[class*="OutlineFrame.module__frame_"],
+[class*="OutlineFrame.module__body_"],
+[class*="MemberListContainer.module__memberListContainer_"],
+[data-flx="channel.channel-chat-layout.textarea-area"] { overflow: visible !important; }
+[class*="OutlineFrame.module__frame_"] { min-height: 0; }
+
+[data-flx="app.guilds-layout.guild-list.guild-list-scroller-wrapper"]::after { content: "nav"; }
+[class*="GuildNavbar.module__guildNavbarContainer_"]::after { content: "channels"; }
+[data-flx="channel.direct-message.dm-list.dm-list-container"]::after { content: "users"; }
+[data-flx="app.guilds-layout.user-area-wrapper"]::after { content: "user"; }
+[class*="ChannelHeader.module__headerWrapper_"]::after { content: "channel"; }
+[class*="GuildMembersPage.module__pageContainer_"]::after,
+[class*="MemberListContainer.module__memberListContainer_"]::after { content: "members"; }
+[data-flx="channel.channel-chat-layout.textarea-area"]::after { content: "input"; }
+[class*="ChannelIndexPage.module__searchPanel_"]::after { content: "search"; }
+[class*="DMFriendsView.module__content_"]::after { content: "friends"; }
+[class*="ActiveNowSidebar.module__sidebar_"]::after { content: "activity"; }
+[class*="VoiceCallView.module__root_"]::after { content: "voice"; }

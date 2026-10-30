@@ -42,6 +42,7 @@ theming-monitor = "HDMI-A-1"
 
 [modules.dashboard]
 icon-color = "accent"
+button-bg-color = "transparent"
 
 [modules.mango-workspaces]
 active-indicator = "underline"

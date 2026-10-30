@@ -1,8 +1,9 @@
-theme = "kanagawa"
+theme = "kanagawa-transparent"
+# theme = "kanagawa"
 
 [editor]
 line-number = "relative"
-mouse = true
+mouse = false
 auto-completion = true
 path-completion = true
 
@@ -33,3 +34,4 @@ workspace-diagnostics = ["warning", "error"]
 [keys.normal]
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
+"esc" = ["collapse_selection", "keep_primary_selection"]
