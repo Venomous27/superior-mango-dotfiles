@@ -16,6 +16,7 @@ SOURCES=(
     "$HOME/repos"
     "$HOME/OBS"
     "$HOME/Seanime"
+    "$HOME/gallery_immich"
 )
 
 notify-send "Backup started. Relax bruv"
