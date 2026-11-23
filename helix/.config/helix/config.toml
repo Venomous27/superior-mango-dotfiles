@@ -35,3 +35,10 @@ workspace-diagnostics = ["warning", "error"]
 "}" = "goto_next_paragraph"
 "{" = "goto_prev_paragraph"
 "esc" = ["collapse_selection", "keep_primary_selection"]
+"p" = ["replace_with_yanked"]
+"a" = ["collapse_selection", "move_char_right", "insert_mode"]
+"i" = ["collapse_selection" , "insert_mode"]
+
+[keys.select]
+"a" = ["collapse_selection", "move_char_right", "insert_mode"]
+"i" = ["collapse_selection" , "insert_mode"]

@@ -40,6 +40,8 @@ entries = [
   "trash",
   { title = "tmp", path = "/tmp", key = "T" },
   { title = "dotfiles", path = "~/superior-mango-dotfiles", key = "." },
+  { title = "videos", path = "~/Videos", key = "v" },
+  { title = "editing", path = "~/Editing", key = "e" },
 ]
 
 [layout.panes]
